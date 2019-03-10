@@ -1,0 +1,136 @@
+body{
+	transition: all 0.5s ease;
+}
+.col-md-12{
+	border-bottom: 0.5px solid #9C9EA3;
+	padding-bottom: 10px;
+	padding-left: 0px !important;
+	padding-right: 0px !important; 
+	margin-bottom: 10px;
+}
+.search_form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #D2DFFF;
+	transition: all 0.5s ease;
+}
+
+.form {
+	display: inherit;
+	width: 0px;
+	height: 50px;
+	background: #41484a;
+ 	text-align: center;
+  	line-height: 45px;
+	margin: 10px;
+  	padding-right: 50px;
+  	transition: all 0.5s ease;
+  	border-radius: 5px;
+  	position: relative;
+  	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.input{
+	border: 0px;
+	border-bottom: 2px solid #fff;
+	background: transparent;
+	width: 0%;
+	padding: 5px 0;
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+input[type="submit"]{
+	position: relative;
+	width: 0px;
+	padding: 0;
+	opacity: 0;
+	transition: all 1s ease;
+}
+input[type="submit"].active{
+	padding: auto;
+	opacity: 1;
+	width: 70px;
+}
+
+.form .fa{
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+  	color: #ffffff;
+  	position: absolute;
+  	right: 15px;
+  	top: 15px;
+  	font-size: 22px;
+  	cursor: pointer;
+}
+
+.form.active{
+  	width: 50%;
+  	padding-left: 25px;
+  	transition: all 1s ease;
+}
+.input.active{
+	border: none;
+  	width: 98%;
+  	padding-left: 5px;
+  	transition: all 0.5s 0.3s ease;
+}
+
+input::placeholder {
+  	color: #fff;
+}
+.col-md-12 p {
+	margin-top: 10px;
+	width: 100%;
+	border-top: 0.5px solid #9C9EA3;
+}
+.result {
+	border-right: 1px solid #666;
+	padding-right: 10px;
+	transition: all 0.5s ease;
+}
+ol>li {
+	border-bottom: 0.1px solid #E5E5E5;
+	padding-bottom: 10px;
+}
+ol>li>a {
+	color: #666;
+	text-decoration: underline;
+}
+ol>li>a:hover{
+	color: #000;
+	text-decoration: none;
+}
+.col-md-3{
+	background-color: #41484a;
+	transition: all 0.5s ease;
+}
+.place_for_comments h4{
+	color: #fff;
+}
+.place_for_comments #prev_search a,
+.place_for_comments #load,
+.place_for_comments .change_interface a{
+	color: #D2DFFF;
+}
+
+#reset {
+	text-decoration: underline;
+}
+#reset:hover {
+	cursor: pointer;
+	color: #666;
+	text-decoration: none;
+}
+@media (max-width: 768px){
+	.search_form {
+		display: block;	
+}
+	.form {
+		display: flex;
+	}
+	.form.active{
+  		width: 80%;
+	}
+}

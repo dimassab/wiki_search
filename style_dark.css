@@ -1,0 +1,143 @@
+body{
+	background: #4D4D4D !important;
+	transition: all 0.5s ease;
+}
+.container{
+	background-color: rgba(255,255,255, 0.2);
+}
+.col-md-12{
+	border-bottom: 0.5px solid #9C9EA3;
+	padding-bottom: 10px;
+	padding-left: 0px !important;
+	padding-right: 0px !important; 
+	margin-bottom: 10px;
+ 
+}
+.search_form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #41484a;
+	transition: all 0.5s ease;
+}
+.search_form h2{
+	color: #D2DFFF;
+}
+.form {
+	display: inherit;
+	width: 0px;
+	height: 50px;
+	background: #D2DFFF;
+ 	text-align: center;
+  	line-height: 45px;
+	margin: 10px;
+  	padding-right: 50px;
+  	transition: all 0.5s ease;
+  	border-radius: 5px;
+  	position: relative;
+  	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.input{
+	border: 0px;
+	border-bottom: 2px solid #fff;
+	background: transparent;
+	width: 0%;
+	padding: 5px 0;
+	outline: none;
+	color: #000;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+input[type="submit"]{
+	position: relative;
+	width: 0px;
+	padding: 0;
+	opacity: 0;
+	transition: all 1s ease;
+}
+input[type="submit"].active{
+	padding: auto;
+	opacity: 1;
+	width: 70px;
+	background: #4D4D4D;
+	color: #fff;
+}
+
+.form .fa{
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+  	color: #000;
+  	position: absolute;
+  	right: 15px;
+  	top: 15px;
+  	font-size: 22px;
+  	cursor: pointer;
+}
+
+.form.active{
+  	width: 50%;
+  	padding-left: 25px;
+  	transition: all 1s ease;
+}
+.input.active{
+	border: none;
+  	width: 98%;
+  	padding-left: 5px;
+  	transition: all 0.5s 0.3s ease;
+}
+
+input::placeholder {
+  	color: #000;
+}
+
+.result {
+	color: #fff;
+	border-right: 1px solid #666;
+	padding-right: 10px;
+}
+ol>li {
+	border-bottom: 0.1px solid #E5E5E5;
+	padding-bottom: 10px;
+}
+ol>li>a {
+	color: #fff;
+	text-decoration: underline;
+}
+ol>li>a:hover{
+	color: #000;
+	text-decoration: none;
+}
+.col-md-3{
+	background-color: #D2DFFF;
+	transition: all 0.5s ease;
+}
+.place_for_comments h4{
+	color: #000;
+	
+}
+.place_for_comments #prev_search a,
+.place_for_comments #load,
+.place_for_comments .change_interface a{
+	color: #41484a;
+	transition: all 0.5s ease;
+}
+
+#reset {
+	text-decoration: underline;
+}
+#reset:hover {
+	cursor: pointer;
+	color: #fff;
+	text-decoration: underline;
+}
+@media (max-width: 768px){
+	.search_form {
+		display: block;	
+}
+	.form {
+		display: flex;
+	}
+	.form.active{
+  		width: 80%;
+	}
+}
